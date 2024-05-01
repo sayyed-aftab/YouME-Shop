@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/YouMe/static/css/main.eebbf0e4.css",
+    "main.js": "/YouMe/static/js/main.b4e3e2aa.js",
+    "static/js/592.cddc7610.chunk.js": "/YouMe/static/js/592.cddc7610.chunk.js",
+    "index.html": "/YouMe/index.html",
+    "main.eebbf0e4.css.map": "/YouMe/static/css/main.eebbf0e4.css.map",
+    "main.b4e3e2aa.js.map": "/YouMe/static/js/main.b4e3e2aa.js.map",
+    "592.cddc7610.chunk.js.map": "/YouMe/static/js/592.cddc7610.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eebbf0e4.css",
+    "static/js/main.b4e3e2aa.js"
+  ]
+}
