@@ -1,38 +1,427 @@
-.App {
+.home img {
+  width: 100%;
+  height: 40%;
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 21%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(7, 3, 3);
+  margin-bottom: 5px;
+  margin-left: 20px;
+  font-style: italic;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlay p,
+h4 {
+  font-size: 1.2em;
+  font-style: italic;
+  color: wheat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color:green;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: gray;
+  box-shadow: greenyellow;
+  transition: all.2s ease-in-out;
+}
+
+.all-box {
+  margin-top: -6px;
+  padding: 20px 20px;
+  display: flex;
+  width: 97%(97%-21px);
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: purple;
+}
+
+.all-box .box {
+  width: 16%;
+  height: 98%;
+  text-align: center;
+  box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.all-box img {
+  width: 100%;
+  height: 80%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.all-box .box:hover {
+  box-shadow: 10px 15px 80px rgba(0, 0, 0, 0.2);
+  font-size: large;
+}
+
+.all-box .box h3 {
+  display: inline-block;
+  padding: 4px 5px 1px 8px;
+  line-height: 1;
+  border-radius: 7px;
+  color: white;
+  background-color: lightseagreen;
+  cursor: pointer;
+
+}
+
+.all-box .box:nth-child(2) h3 {
+  background-color: orange;
+}
+
+.all-box .box:nth-child(3) h3 {
+  background-color: green;
+}
+
+.all-box .box:nth-child(4) h3 {
+  background-color: yellowgreen;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: blueviolet;
+  background-position: 20px 30px;
+  background-size: contain;
+  height: 120px;
+  width: 100%;
+}
+
+.newstext h4 {
+  align-items: flex-start;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.newstext p {
+  align-items: flex-start;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0px;
+  color: white;
+  margin-top: -11px;
+}
+
+.newsletter span {
+  align-items: flex-start;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+
+}
+
+.newstext form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.newsletter input {
+  height: 1.12rem;
+  padding: 1.26em;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+
+.newsletter button {
+  background-size: 340px;
+  background-color: rgb(35, 196, 35);
+  color: black;
+  margin-top: 10px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.newsletter button:hover {
+  background-color: darkgreen;
+  color: white;
+  box-shadow: #088178 0 0 10px inset;
+}
+
+.last-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.last-banner .last-box1 {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  padding-left: 100px;
+  margin-top: 0px;
+  background-color: #e41a90;
+  height: 200px;
+  width: 630px;
+  background-size: cover;
+}
+
+.last-banner h2 {
+  margin-top: -5px;
+  font-size: 21px;
+  font-weight: 700;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.last-banner h4 {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.last-banner span {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.last-banner button {
+  background-color: white;
+  color: black;
+  margin: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  border: none;
+}
+
+.last-banner button:hover {
+  background-color: #088178;
+  color: #050001;
+  box-shadow: 0 0 5px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent);
+}
+
+.last-banner .sec {
+  background-color: rgb(122, 7, 122);
+  align-items: center;
+  padding-left: 132px;
+
+
+
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #050001;
+}
+
+.footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 20px;
+  margin-left: 32px;
+  margin-right: 42px;
+  color: white;
+}
+
+.footer h1 {
+  font-style: oblique;
+  margin-bottom: 15px;
+  color: #fff;
+  border: 2px solid white;
+  padding: 10px;
+  margin-right: 110px;
+  border-radius: 5px;
+
+}
+
+.footer h1:hover {
+  background-color: purple;
+  box-shadow: #e41a908c 0 0 10px;
+}
+
+.footer h4 {
+  padding-bottom: 15px;
+  font-size: 19px;
+  color: wheat;
+}
+
+.footer p {
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+footer .follow {
+  margin-top: -30px;
+  color: aqua;
+
+}
+
+.footer .follow i {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 16px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.footer .follow i:hover,
+.footer a:hover {
+  color: green;
+}
+
+footer .Install .row img {
+  border: 1px solid blue;
+  border-radius: 6px;
+}
+
+footer .Install .row img:hover {
+  box-shadow: 0 0 5px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent);
+  background-color: #03e9f4;
+  cursor: pointer;
+}
+
+.footer .Install .payment img {
+  border: 2px solid blue;
+}
+
+.footer .Install .payment img:hover {
+  background-color: blue;
+  box-shadow: 0 0 5px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent);
+  cursor: pointer;
+}
+
+.footer a {
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px)and (max-width: 1024px) {
+  .home img {
+    height: 16%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .overlay {
+    top: 44%;
+    left: 30%;
+  }
+
+  .overlay h4 {
+    margin-top: 10px;
+    margin-left: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 20px;
+    margin-left: -11px;
+  }
+
+  .overlay button {
+    margin-left: -3rem;
+    font-size: 21px;
+  }
+
+  .all-box {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all-box .box {
+    width: 96%;
+    margin-bottom: 20px;
+  }
+
+  .newsletter {
+    width: fit-content;
+    height: 250px;
+    margin-top: -10px;
+    margin-right: 5px;
+    margin-bottom: 9px;
+  }
+
+  .newsletter h4,
+  p {
+    font-size: 21px;
+    margin-left: 33px;
+
+  }
+
+  .newsletter input {
+    font-size: 12px;
+    margin-left: -3px;
+  }
+
+  .newsletter button {
+    font-size: 22px;
+    margin-left: 43px;
+  }
+
+  .last-banner .last-box1 {
+    width: 96%;
+    height: 30vh;
+    margin-top: -11px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .footer .col {
+    margin-left: 15px;
+    margin-right: 13px;
   }
 }

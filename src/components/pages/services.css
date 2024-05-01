@@ -1,0 +1,55 @@
+.services {
+    display: flex;
+
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 90vh;
+    border: 2px solid black;
+}
+
+.ser {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 41px;
+    padding: 30px;
+    margin-top: 21px;
+
+}
+
+.ser h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.ser a {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 11px;
+
+}
+/* For mobile devices */
+@media screen and (max-width: 400px) {
+    .services {
+      flex-direction: column; 
+      height: auto;
+    }
+  
+    .ser {
+      width: 90%; 
+      margin: 20px auto; 
+      padding: 15px;
+    }
+  
+    .ser h1 {
+      font-size: 28px; 
+    }
+  
+    .ser a {
+      font-size: 16px;
+      margin: 5px 0; 
+    }
+  }
+  
